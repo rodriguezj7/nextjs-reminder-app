@@ -81,12 +81,9 @@ export default function LoginPage(): JSX.Element {
       <>
         <div className={`d-flex align-items-center justify-content-center vh-100 bg-light overflow-hidden ${loginStyles.parentContainer}`}>
           {/* Background */}
-          <div className={loginStyles.rotatedDivLeft}/>
           <div className={loginStyles.rotatedDivRight}/>
           {/* Logo */}
-          <div className={loginStyles.logoContainer}>
-            <Image src="/icons/personify_logo.svg" alt="White Logo" width={256} height={100}/>
-          </div>
+
           {/* Login Card */}
           <div className={`card shadow p-4 w-50 text-center`} style={{maxWidth: "468px", height: "518px"}}>
             <div className={loginStyles.loginCardContent}>
@@ -103,13 +100,13 @@ export default function LoginPage(): JSX.Element {
                 )}
                 <div className={loginStyles.iconContainer}>
                   <div className={loginStyles.iconWrapper}>
-                    <Image src="/icons/favicon-ph.png" alt="Logo" layout="fill" objectFit="contain"/>
+                    {/* <Image src="/icons/favicon-ph.png" alt="Logo" layout="fill" objectFit="contain"/> */}
                   </div>
                 </div>
               </div>
               {/* Title */}
               <h2 className="fw-bold mb-4">
-                {showForgotPassword ? 'Forgot Password' : 'Sign in to PH Intellect'}
+                {showForgotPassword ? 'Forgot Password' : 'Sign in'}
               </h2>
               {/* Form */}
               {showForgotPassword ? (

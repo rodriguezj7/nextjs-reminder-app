@@ -45,6 +45,9 @@ export default function InspirationCard({
       <small className="text-muted">
         Generated at: {formatDateTime(generatedAt)}
       </small>
+        </div>
+        {loading && <LoadingIndicator />}
+        {!loading && <p className="card-text mt-3" style={{marginLeft: "16px", marginRight: "16x"}}>{text}</p>}
     </div>
   
     <div className="card-body">

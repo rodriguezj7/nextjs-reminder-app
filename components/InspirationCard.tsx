@@ -39,15 +39,24 @@ export default function InspirationCard({
   loading = false,
 }: InspirationCardProps): JSX.Element {
   return (
-    <div className="card p-2" style={{background: "#f2f4f5"}}>
-        <div className="card-header d-flex justify-content-between align-items-center" style={{background: "#f2f4f5"}}>
-            <h5 className="card-title mb-0">{title}</h5>
-            <small className="text-muted">
-                Generated today: {formatDateTime(generatedAt)}
-            </small>
+    <div className="card p-3" style={{ background: "#f2f4f5" }}>
+    <div className="card-header d-flex justify-content-between align-items-center" style={{ background: "#f2f4f5", borderBottom: "1px solid #dee2e6" }}>
+      <h5 className="card-title mb-0">{title}</h5>
+      <small className="text-muted">
+        Generated at: {formatDateTime(generatedAt)}
+      </small>
         </div>
         {loading && <LoadingIndicator />}
         {!loading && <p className="card-text mt-3" style={{marginLeft: "16px", marginRight: "16x"}}>{text}</p>}
     </div>
+  
+    <div className="card-body">
+      {loading ? (
+        <LoadingIndicator />
+      ) : (
+        <p className="card-text">{text}</p>
+      )}
+    </div>
+  </div>
   );
 }

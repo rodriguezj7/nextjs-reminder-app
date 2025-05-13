@@ -24,12 +24,12 @@ export default function Navbar(): JSX.Element {
       <nav className={`${navBarStyles.navbarFont} navbar navbar-expand-lg navbar-light bg-white border-bottom px-3`}>
         {/* Logo + Brand */}
         <Link href="/" className={`navbar-brand d-flex align-items-center`}>
-          <Image
+          {/* <Image
             src="/icons/personify_logo_blue.svg"
             alt="Personify Health Logo"
             width={150}
             height={40}
-          />
+          /> */}
         </Link>
 
         {/* Navigation Links */}

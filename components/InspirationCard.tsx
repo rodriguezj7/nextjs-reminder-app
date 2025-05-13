@@ -43,7 +43,7 @@ export default function InspirationCard({
         <div className="card-header d-flex justify-content-between align-items-center" style={{background: "#f2f4f5"}}>
             <h5 className="card-title mb-0">{title}</h5>
             <small className="text-muted">
-                Generated at: {formatDateTime(generatedAt)}
+                Generated today: {formatDateTime(generatedAt)}
             </small>
         </div>
         {loading && <LoadingIndicator />}

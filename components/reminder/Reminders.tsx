@@ -56,7 +56,7 @@ export default function Reminders({
                 borderColor: '#163B42',
                 color: 'white',
                 }}>
-            Create New Test change
+            Create New Test change 2
           </button>
         </div>
       </div>

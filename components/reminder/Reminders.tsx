@@ -75,6 +75,12 @@ export default function Reminders({
           value={newReminder.description}
           onChange={(e) => setNewReminder({ ...newReminder, description: e.target.value })}
         />
+         <input
+          type="date"
+          className="form-control mb-2"
+          value={newReminder.date}
+          onChange={(e) => setNewReminder({ ...newReminder, date: e.target.value })}
+        />
       </div>
 
       {/* Render Reminder List */}

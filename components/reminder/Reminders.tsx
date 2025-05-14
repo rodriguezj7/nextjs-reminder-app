@@ -59,7 +59,7 @@ export default function Reminders({
                 padding: '10px 20px',
                 borderRadius: '5px',
                 }}>
-            Create New Test change
+            Create New Test change 2
           </button>
 
         </div>

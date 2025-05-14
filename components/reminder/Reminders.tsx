@@ -46,7 +46,8 @@ export default function Reminders({
   return (
     <div>
       <div className="d-flex justify-content-between align-items-center mb-3">
-        <h4 className="mb-0">Reminders: {reminders.length}</h4>
+        <h3 className="mb-0">Reminders: {reminders.length}</h3>
+
         <div className={remindersCSS.remindersButtons}>
           {/* <button className="btn btn-outline-primary me-2" onClick={onViewCompleted}>
             View Completed
@@ -55,10 +56,14 @@ export default function Reminders({
                 backgroundColor:' #163B42',
                 borderColor: '#163B42',
                 color: 'white',
+                padding: '10px 20px',
+                borderRadius: '5px',
                 }}>
             Create New Test change 2
           </button>
+
         </div>
+
       </div>
 
       {/* New Reminder Form */}
